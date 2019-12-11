@@ -2,15 +2,22 @@ import 'package:flutter/material.dart';
 
 void main(List<String> args) {
   runApp(
-    MaterialApp(
+    MyApp(),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Messio',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Messio'),
-    ),
-  );
+    );
+  }
 }
 
 class MyHomePage extends StatefulWidget {
